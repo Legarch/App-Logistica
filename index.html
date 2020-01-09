@@ -1,0 +1,122 @@
+<!doctype html>
+<html ng-app="sartWeb">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="fragment" content="!">
+    <title>SART</title>
+
+    <!-- favicon -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/admin-lte/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="bower_components/admin-lte/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
+    <!-- <link rel="icon" href="css/images/logo.jpg"> -->
+    
+    <!-- Sweet Alert 2 -->
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini" style="margin: 0px !important">
+
+    <!-- wrapper -->
+    <div class="wrapper">
+            <ng-include ng-if="$root.showMenu" src="'views/templates/header.html'"></ng-include>
+            <ng-include ng-if="$root.showMenu" src="'views/templates/menu.html'"></ng-include>
+        
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper" ng-style="!$root.showMenu && {'margin-left':'0px'}">
+        
+              <div ng-view=""></div>
+            </div>
+                    
+    </div>
+
+
+
+    <!-- ANGULAR -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-sanitize.min.js"></script>
+    <script src="js/angular/angular-translate.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+
+    <script src="js/angular-touch.min.js"></script>
+    <script src="js/ngDialog.min.js"></script>
+    <script src="js/locale-es.js"></script>
+
+    <script src="js/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="js/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="js/twitter-timeline.js"></script>
+    <script src="js/angular-youtube-preview.js"></script>
+    <script src="js/qrcode.js"></script>
+    <script src="js/angular-qr.js"></script>
+    <script src="js/youtube.js"></script>
+
+    <!-- Admin LTE -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/admin-lte/dist/js/adminlte.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/admin-lte/dist/js/demo.js"></script>
+
+    <!-- Angular Cookies -->
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+
+    <!-- Sweet Alert2 -->
+    <script src="bower_components/sweetalert2/dist/sweetalert2.all.js"></script>
+
+    <script src="ip.js"></script>
+    <script src="app/app.js"></script>
+
+    <!-- Services -->
+    <script src="app/services/usuario.js"></script>
+    <script src="app/services/cliente.js"></script>
+    <script src="app/services/estadoCarga.js"></script>
+    <script src="app/services/estadoTransito.js"></script>
+    <script src="app/services/formatoCarga.js"></script>
+    <script src="app/services/obra.js"></script>
+    <script src="app/services/perfil.js"></script>
+    <script src="app/services/provincia.js"></script>
+    <script src="app/services/tipoCarga.js"></script>
+    <script src="app/services/transporte.js"></script>
+    <script src="app/services/localidad.js"></script>
+    <script src="app/services/necesidadCarga.js"></script>
+    <script src="app/services/hojaRuta.js"></script>
+    <script src="app/services/auth-user.factory.js"></script>
+    <script src="app/services/auth.factory.js"></script>
+    <script src="app/services/pagination.js"></script>
+    <script src="app/services/necesidadDetalle.js"></script>
+    <script src="app/services/reportes.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/controllers/home.js"></script>
+    <script src="app/controllers/menu.js"></script>
+    <script src="app/controllers/usuarios.js"></script>
+    <script src="app/controllers/cliente.js"></script>
+    <script src="app/controllers/estadoCarga.js"></script>
+    <script src="app/controllers/estadoTransito.js"></script>
+    <script src="app/controllers/formatoCarga.js"></script>
+    <script src="app/controllers/obra.js"></script>
+    <script src="app/controllers/perfil.js"></script>
+    <script src="app/controllers/provincia.js"></script>
+    <script src="app/controllers/tipoCarga.js"></script>
+    <script src="app/controllers/transporte.js"></script>
+    <script src="app/controllers/localidad.js"></script>
+    <script src="app/controllers/necesidadCarga.js"></script>
+    <script src="app/controllers/hojaRuta.js"></script>
+    <script src="app/controllers/login.js"></script>
+    <script src="app/controllers/header.js"></script>
+    <script src="app/controllers/user.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/alasql/0.3/alasql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.core.min.js"></script>
+    
+</body>
+
+</html>

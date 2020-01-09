@@ -1,0 +1,24 @@
+{
+  "name": "sart",
+  "authors": [
+    "Emanuel <emanueleonardog@gmail.com>"
+  ],
+  "description": "Sistema de administracion de transporte",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-cookies": "^1.5.8"
+  },
+  "resolutions": {
+    "jquery": ">=1.6"
+  }
+}

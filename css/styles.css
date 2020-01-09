@@ -1,0 +1,7 @@
+.reporte{
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    left: -200px;
+    margin-left: 50% !important;
+}
