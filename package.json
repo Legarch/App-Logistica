@@ -31,7 +31,7 @@
     "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
     "moment": "^2.22.2",
-    "mongoose": "^5.2.4",
+    "mongoose": "^5.7.5",
     "mysql": "^2.16.0",
     "node-uuid": "^1.4.8",
     "outlayer": "^2.1.1",
